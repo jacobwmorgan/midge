@@ -1,5 +1,5 @@
+from logging import info
 from discord.ext import commands
-
 class BasicCommands(commands.Cog, name="Basic Commands"):
     """
         Basic commands for the bot
@@ -18,5 +18,5 @@ async def setup(bot):
     """
         Adds the cog to the bot
     """
-    print("Loading BasicCommands cog...")
+    info("Loading BasicCommands cog...")
     await bot.add_cog(BasicCommands(bot))
